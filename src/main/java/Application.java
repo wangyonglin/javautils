@@ -1,4 +1,7 @@
 
+
+
+import javautils.wangyonglin.element.Collection;
 import javautils.wangyonglin.utils.MailUtil;
 import javautils.wangyonglin.utils.RandomUtil;
 
@@ -16,5 +19,11 @@ public class Application {
         }
         System.out.println(RandomUtil.Generator());
         System.out.println("Hello World!");
+
+        Collection.put("wx729134dca293ffab","7a8b07e557ca7556587389516e3fce3e");
+        Collection.put("wxa054e8196d3492e3","6c49f40f3e3dc5cef017b4a190b5f51a");
+        Collection token= Collection.get("wx729134dca293ffab");
+        System.out.println(token.key+"?"+token.value);
+
     }
 }
